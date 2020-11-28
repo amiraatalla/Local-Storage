@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <table id="information" style="width: 50%; float: center">
+      <tr>
+        <th colspan="4" style="text-align: center"><h1>Information</h1></th>
+      </tr>
+      <tr>
+        <td>ID:</td>
+        <td><input type="number" id="txtID" min="0" /></td>
+        <td>Full Name:</td>
+        <td><input type="text" id="txtFullName" /></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" id="txtEmail" /></td>
+        <td>Telephone:</td>
+        <td>
+          <input
+            type="text"
+            id="txtPhone"
+            title="Please enter phone in this format 000-0000000"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="float: right">Age:</td>
+        <td><input type="number" id="txtAge" min="16" max="60" step="1" /></td>
+      </tr>
+    </table>
+
+    <br />
+    <div>
+      <button id="btnAdd">Add</button>
+      <button id="btnReset">Reset</button>
+      <button id="btnDisplay">Display</button>
+    </div>
+
+    <p id="errMsg">No Info To Display Here</p>
+
+    <table id="infoTable">
+      <tr>
+        <th>ID</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Telephone</th>
+        <th>Age</th>
+      </tr>
+
+      <tbody id="infoTableBody"></tbody>
+    </table>
+  </body>
+
+  <script type="text/javascript" src="main.js"></script>
+</html>
